@@ -7,3 +7,5 @@ docker run -d -p60000:6379 redis -> runs docker redis latest image in detached m
 docker logs <container_id>/docker logs <container_name>
 docker run -d -p6000:6379 --name redis-latest redis -> runs latest redis image and binds host port 6000 to container port 6379 with name as redis-latest
 docker exec -it <contain_id> /bin/bash ->  used to get terminal of the running container.(useful for debugging)
+docker start <container_id> -> docker run creates a new container and docker start restart a stopped container
+docker build -t <name_of_image_to_be_built> -> creates docker image from docker file
